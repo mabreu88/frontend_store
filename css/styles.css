@@ -1,0 +1,32 @@
+:root {
+    --color-primary: #9c27b0;
+    --color-secondary: #89119d;
+    --color-tertiary: #ffce00;
+    --color-quaternary: rgb(233, 287, 2);
+    --color-quinary: #fff;
+    --color-senary: #000;
+
+    --font-primary: 'Staatliches', cursive;
+    --font-secondary: 'Montserrat', regular;
+}
+
+/*=== Golbals ===*/
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--color-primary);
+    
+}
+
