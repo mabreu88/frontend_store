@@ -10,9 +10,6 @@
     --font-secondary: 'Montserrat', regular;
 }
 
-/*=== Golbals ===*/
-
-/* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -23,10 +20,96 @@ html {
 *:after {
     box-sizing: inherit;
 }
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+/*=== Golbals ===*/
 
 body {
     font-size: 16px;
+    line-height: 1.5;
     background-color: var(--color-primary);
-    
 }
 
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-quinary);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--color-tertiary);
+    font-family: var(--font-primary);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+/*=== Header ===*/
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    margin: 3rem 0;
+}
+
+/*=== Navigation ===*/
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-secondary);
+    padding: 1rem 0;
+    gap: 2rem;
+}
+
+.nav__item {
+    font-family: var(--font-primary);
+    color: var(--color-quinary);
+    font-size: 3rem;
+}
+
+.nav__item--active,
+.nav__item:hover {
+    color: var(--color-tertiary);
+}
+
+/*=== Footer ===*/
+
+.footer {
+    background-color: var(--color-secondary);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer__text {
+    font-family: var(--font-secondary);
+    color: var(--color-quinary);
+    font-size: 1.6rem;
+    text-align: center;
+}
