@@ -192,14 +192,14 @@ h3 {
 .about {
     display: grid;
     grid-template-rows: repeat(2, auto);
-    
+
 }
 
 @media (min-width: 768px) {
     .about {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
-    }    
+    }
 }
 
 .about__content {
@@ -214,5 +214,26 @@ h3 {
 @media (min-width: 768px) {
     .about__img {
         grid-column: 2/3;
+    }
+}
+
+/*=== Why but ===*/
+
+.buy {
+    display: grid;
+    grid-template-row: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.buy__icon {
+    width: 25rem;
+}
+
+@media (min-width: 768px) {
+    .buy {
+
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+
     }
 }
